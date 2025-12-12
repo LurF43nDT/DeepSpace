@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Space Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info">Scan asteroids to find the target</div>
+    <div id="crosshair">+</div>
+
+    <div id="controls-info">
+        <b>Controls</b><br>
+        W/S: Forward/Backward<br>
+        A/D: Turn Left/Right<br>
+        Space: Up<br>
+        Alt: Down<br>
+        Mouse Drag: Look<br>
+        Click: Scan
+    </div>
+
+    <div id="target-label">F2</div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
