@@ -58,3 +58,34 @@ body {
 #target-label.visible {
     display: block;
 }
+
+#magic-meter-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffd700; /* Gold border */
+    border-radius: 5px;
+    z-index: 2;
+    padding: 2px;
+}
+
+#magic-meter-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #00aaff; /* Bright blue */
+    border-radius: 3px;
+    transition: width 0.2s ease-out;
+}
+
+#magic-meter-label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: white;
+    font-size: 14px;
+    text-shadow: 0 0 3px #000;
+}
+
